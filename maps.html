@@ -4,169 +4,18 @@
 <title>Friedrichshain</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta charset="utf-8">
-<style>
-html,body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-#map-canvas {
-    height: 600px;
-    width: 100%;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script type='text/javascript'
     src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 <script
     src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script>
-    var map, mgr;
-    var geocoder;
-
-    google.maps.visualRefresh = true;
-
-    function initialize() {
-        geocoder = new google.maps.Geocoder();
-
-        var mapOptions = {
-            labels : false,
-            zoom : 16,
-            center : new google.maps.LatLng(52.506022, 13.463058),
-            mapTypeId : google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-
-        // Kirchen
-        // Cafes
-        // Restaurants
-        var markers = [];
-        var arr = [ {
-            name : 'Kita',
-            address : 'Simplonstraße 16, 10245 Berlin'
-        }, {
-            name : 'Postbank Finanzcenter',
-            address : 'Frankfurter Allee 71-77, 10247 Berlin',
-            description: 'Öffnungszeiten<br/>Mo - Fr 09:00 - 18:30<br/>Sa  09:30 - 13:00'
-        }, {
-            name : 'Packstation 114',
-            address : 'Revaler Str. 2, 10243 Berlin',
-            description: 'Kaiser\'s Markt<br/>Zugangszeiten<br/>täglich rund um die Uhr'
-        }, {
-            name : 'Briefkasten',
-            address : 'Wühlischstr. 24, 10245 Berlin',
-            description: 'Leerungszeiten<br/>Mo - Fr 15:15    17:15    21:30</br>Sa  12:15<br/>So  09:00    21:30'
-        }, {
-            name : 'Briefkasten',
-            address : 'Sonntagstr. 1, 10245 Berlin',
-            description : 'Leerungszeiten<br/>Mo - Fr 13:00    17:15    21:30<br/>Sa  12:15<br/>So  09:00    21:30'
-        }, {
-            name : 'Briefkasten',
-            address : 'Krossener Str. 1, 10245 Berlin',
-            description : 'Leerungszeiten<br/>Mo - Fr 13:00    15:15    17:15    21:30<br/>Sa  12:15<br/>So  09:00    21:30'
-        }, {
-            name : 'Rewe',
-            address : 'Revaler Straße 33, 10245 Berlin',
-            description : '030-29368761<br/>Geöffnet Mo-Sa 7-22 Uhr'
-        }, {
-            name : 'Rewe',
-            address : 'Am Ostbahnhof 9, 10243 Berlin',
-            description : '030-29365952<br/>Geöffnet Mo-So 7-24 Uhr'
-        }, {
-            name : 'Aldi',
-            address: 'Revaler Straße 33, 10245 Berlin‎',
-            description : 'Geöffnet Mo-Sa 08:00-20:00 (???)'
-        }, {
-            name : 'Zu Hause',
-            address : 'Simplonstraße 46, 10245 Berlin'
-        }, {
-            name : 'Lidl',
-            address: 'Boxhagener Str. 76-78, 10245 Berlin',
-            description: 'Geöffnet Mo. - Sa. 8 - 22 Uhr'
-        }, {
-            name : 'Sparkasse',
-            address: 'Boxhagener Str. 55, 10245 Berlin', 
-            description: '<strong>Öffnungszeiten</strong><br/>Mo, Mi, Fr 9.30-15.00<br/>Di, Do 9.30-18.00'
-        }, {
-            name : 'Deutsche Bank',
-            address : 'Möllendorffstraße 117, 10367 Berlin',
-            description : 'Öffnungszeiten<br/>Montag: 10:00 - 18:00<br/> Dienstag: 10:00 - 18:00 <br/>Mittwoch: 10:00 - 16:00 <br/>Donnerstag: 10:00 - 18:00 <br/>Freitag: 10:00 - 16:00 '
-        }, {
-            name : 'Commerzbank',
-            address : 'Frankfurter Allee 24 - 26, 10247 Berlin',
-            description : 'Filialöffnungszeiten<br/>Montag   09:00-13:00   14:00-16:00<br/>Dienstag    09:00-13:00   14:30-18:00<br/>Mittwoch    09:00-13:00   14:00-16:00<br/><br/>Donnerstag  09:00-13:00   14:30-18:00<br/>Freitag 09:00-14:00   '
-        } ];
-        for ( var i = 0; i < arr.length; i++) {
-            console.log('i ', i);
-            console.log('arr[i] ', arr[i]);
-            (function(entry) {
-                console.log('entry ', entry);
-                if (entry.lat && entry.lng) {
-                    var marker = new google.maps.Marker(
-                            {
-                                position : new google.maps.LatLng(entry.lat,
-                                        entry.lng),
-                                map : map,
-                                title : entry.name,
-                                draggable : true,
-                                flat : true
-                            });
-                    markers.push({
-                        marker : marker,
-                        data : entry
-                    });
-                } else if (entry.address) {
-                    geocoder
-                            .geocode(
-                                    {
-                                        'address' : entry.address
-                                    },
-                                    function(results, status) {
-                                        if (status == google.maps.GeocoderStatus.OK) {
-                                            var marker = new google.maps.Marker(
-                                                    {
-                                                        position : results[0].geometry.location,
-                                                        map : map,
-                                                        title : entry.name,
-                                                        draggable : true,
-                                                        flat : true
-                                                    });
-                                            markers.push({
-                                                marker : marker,
-                                                data : entry
-                                            });
-                                        } else {
-                                            alert("Geocode was not successful for the following reason: "
-                                                    + status);
-                                        }
-                                    });
-                }
-
-                else {
-
-                    var marker = new google.maps.Marker({
-                        position : new google.maps.LatLng(52.506022, 13.463058),
-                        map : map,
-                        title : entry.name,
-                        draggable : true,
-                        flat : true
-                    });
-                    markers.push({
-                        marker : marker,
-                        data : entry
-                    });
-                }
-            })(arr[i]);
-        }
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+<script src="data.js"></script>
+<script src="script.js"></script>
 
 </head>
 <body>
     <h1>Meine Plätze in Friedrichshain</h1>
     <div id="map-canvas"></div>
+    <div id="details"></div>
 </body>
 </html>
