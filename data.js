@@ -97,6 +97,13 @@ var arr = [{
     "lng" : 13.467849795141206,
     "icon" : "img/map/sparkasse.ico"
 }, {
+    "name" : "Sparkasse",
+    "address" : "Warschauer Str. 55, 10243 Berlin",
+    "description" : "<strong>Öffnungszeiten</strong><br/>Mo, Mi, Fr 9.30-15.00<br/>Di, Do 9.30-18.00",
+    "lat" : 52.50860875424247,
+    "lng" : 13.45127441638465,
+    "icon" : "img/map/sparkasse.ico"
+}, {
     "name" : "Immobilien Scout GmbH",
     "address" : "Andreasstr. 10, 10243 Berlin",
     "description" : "",
@@ -191,9 +198,32 @@ var arr = [{
     "name" : "Apotheke am Ostkreuz",
     "address" : "Sonntagstraße 12, 10245 Berlin",
     "description" : "030 2916212",
-    "icon" : "img/map/apotheke.png"
+    "icon" : "img/map/apotheke.png",
+    "lat" : 52.50623,
+    "lng" : 13.465940000000046
+}, {
+    "name" : "Schulze´s Farben- und Tapetenhaus",
+    "address" : "Provinzstrasse 57, 13409 Berlin",
+    "description" : "Öffnungszeiten<br/>Montag, Dienstag, Donnerstag, Freitag 9-18 Uhr<br/>Mittwoch 8-12 Uhr<br/>Samstag 9-13 Uhr",
+    "lat" : 52.5707428,
+    "lng" : 13.379919900000004
+}, {
+    "name" : "Bergmann & Franz Badausstellung Berlin Showroom »Haus der neuen Badwelten«",
+    "address" : "Lützowstraße 74, 10785 Berlin",
+    "description" : "Telefon (030) 26 08-16 42<br/>E-Mail showroom@bfgruppe.de<br/>Öffnungszeiten:<br/>Mo–Fr 10:00–18:00 Uhr<br/>Sa 10:00–15:00 Uhr<br/>So 12:00–16:00 Uhr (Schautag*)",
+    "lat" : 52.50439,
+    "lng" : 13.35859030000006
+}, {
+    "name" : "Lichthaus Mösch GmbH & Co.KG",
+    "address" : "Kantstraße 17, 10623 Berlin",
+    "description" : "Telefon: 030 31515580<br/>Öffnungszeiten: <br/>Montag  10:00-19:00<br/>Dienstag    10:00-19:00<br/>Mittwoch    10:00-19:00<br/>Donnerstag  10:00-19:00<br/>Freitag 10:00-19:00<br/>Samstag 10:00-19:00",
+    "lat" : 52.50586,
+    "lng" : 13.325039999999944
+}, {
+    "name" : "Tapeterie & Malerei Melchior",
+    "address" : "Blissestraße 50, 10713 Berlin",
+    "description" : "Telefon: (0 30) 8 22 75 01<br/>Für Sie geöffnet: Mo - Fr 10.00 - 18.00 Uhr, Sa 10.00 - 14.00 Uhr und nach Vereinbarung<br/>E-Mail: info@melchior-farben.de"
 }
-
 
 
 ];
