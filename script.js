@@ -32,13 +32,16 @@ function initialize() {
     // Tankstellen
     // Geldautomaten
     // Kioske
+    
+    var infowindow = new google.maps.InfoWindow({
+        content : ""
+    });
 
     for (var i = 0; i < arr.length; i++) {
-        console.log('i ', i);
-        console.log('arr[i] ', arr[i]);
         (function(entry) {
-            console.log('entry ', entry);
             if (entry.lat && entry.lng) {
+                var contentString = "<strong>" + entry.name + "</strong><br/>" + entry.address + "<br/>" + entry.description;
+                
                 var marker = new google.maps.Marker({
                     position : new google.maps.LatLng(entry.lat, entry.lng),
                     map : map,
@@ -47,12 +50,17 @@ function initialize() {
                     draggable : true,
                     flat : true
                 });
+                
+
                 markers.push({
                     marker : marker,
                     data : entry
                 });
                 google.maps.event.addListener(marker, 'click', function() {
-                    $('#details').html(entry.name + "<br/>" + entry.address + "<br/>" + entry.description);
+                    $('#details').html(contentString);
+                    infowindow.setContent(contentString);
+                    infowindow.open(map,marker);
+
                 });
 
             } else if (entry.address) {

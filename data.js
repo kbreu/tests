@@ -93,8 +93,8 @@ var arr = [{
     "name" : "Sparkasse",
     "address" : "Boxhagener Str. 55, 10245 Berlin",
     "description" : "<strong>Öffnungszeiten</strong><br/>Mo, Mi, Fr 9.30-15.00<br/>Di, Do 9.30-18.00",
-    "lat" : 52.507279603040644,
-    "lng" : 13.467849795141206,
+    "lat" : 52.507282868150575,
+    "lng" : 13.467766646661744,
     "icon" : "img/map/sparkasse.ico"
 }, {
     "name" : "Sparkasse",
@@ -115,8 +115,8 @@ var arr = [{
     "address" : "BOXHAGENER STR. 55, BERLIN, 10245",
     "description" : "",
     "icon" : "img/map/visa.jpg",
-    "lat" : 52.50729511231058,
-    "lng" : 13.467869911708817
+    "lat" : 52.50731307040578,
+    "lng" : 13.467792127647385
 }, {
     "name" : "Geldautomat",
     "address" : "SIMPLONSTR. 10/12, BERLIN, 10245",
@@ -178,8 +178,8 @@ var arr = [{
     "address" : "Frankfurter Allee 79, 10247 Berlin",
     "description" : "Öffnungszeiten<br/>Mo–Fr   09:00–20:00, Sa  09:00–16:00",
     "icon" : "img/map/rossmann.png",
-    "lat" : 52.51455,
-    "lng" : 13.469060000000013
+    "lat" : 52.514432649596365,
+    "lng" : 13.469268475960234
 }, {
     "name" : "dm-drogerie markt",
     "address" : "Revaler Straße 2, 10243 Berlin",
@@ -222,8 +222,14 @@ var arr = [{
 }, {
     "name" : "Tapeterie & Malerei Melchior",
     "address" : "Blissestraße 50, 10713 Berlin",
-    "description" : "Telefon: (0 30) 8 22 75 01<br/>Für Sie geöffnet: Mo - Fr 10.00 - 18.00 Uhr, Sa 10.00 - 14.00 Uhr und nach Vereinbarung<br/>E-Mail: info@melchior-farben.de"
-}
-
-
-];
+    "description" : "Telefon: (0 30) 8 22 75 01<br/>Für Sie geöffnet: Mo - Fr 10.00 - 18.00 Uhr, Sa 10.00 - 14.00 Uhr und nach Vereinbarung<br/>E-Mail: info@melchior-farben.de",
+    "lat" : 52.48058,
+    "lng" : 13.319939999999974
+}, {
+    "name" : "Dr.med. Julia Hake-Weiße Fachbereich: Allgemeinarzt",
+    "address" : "Wühlischstraße 57, 10245 Berlin",
+    "description" : "Tel.: 030/2910763<br/>Öffnungszeiten:<br/>Montag  8.00    13.00<br/>Dienstag    12.00   18.00<br/>Mittwoch    12.00   18.00<br/>Donnerstag  8.00    13.00<br/>Freitag     8.00    13.00",
+    "lat" : 52.507003469739374,
+    "lng" : 13.467774635581918,
+    "icon" : "img/map/roteskreuz.jpg"
+}];
