@@ -11,8 +11,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.508283,
-        "ob" : 13.459127999999964
+        "lat" : 52.508283,
+        "lng" : 13.459127999999964
     }
 }, {
     "name" : "Briefkasten",
@@ -39,8 +39,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.504474,
-        "ob" : 13.467862999999966
+        "lat" : 52.504474,
+        "lng" : 13.467862999999966
     }
 }, {
     "name" : "Packstation 114",
@@ -62,8 +62,8 @@ var arr = [{
         "zoom" : 2
     },
     "svPosition" : {
-        "nb" : 52.514416,
-        "ob" : 13.468499000000065
+        "lat" : 52.514416,
+        "lng" : 13.468499000000065
     }
 }, {
     "name" : "Rewe",
@@ -78,8 +78,8 @@ var arr = [{
         "zoom" : 3
     },
     "svPosition" : {
-        "nb" : 52.506221,
-        "ob" : 13.459754999999973
+        "lat" : 52.506221,
+        "lng" : 13.459754999999973
     }
 }, {
     "name" : "Lidl",
@@ -128,6 +128,10 @@ var arr = [{
         "heading" : -133.8,
         "pitch" : 2.6999999999999997,
         "zoom" : 1
+    },
+    "svPosition" : {
+        "lat" : 52.506053,
+        "lng" : 13.46327599999995
     }
 }, {
     "name" : "Deutsche Bank",
@@ -142,8 +146,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.513937,
-        "ob" : 13.477359999999976
+        "lat" : 52.513937,
+        "lng" : 13.477359999999976
     }
 }, {
     "name" : "Rewe",
@@ -165,8 +169,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.515148,
-        "ob" : 13.459799999999973
+        "lat" : 52.515148,
+        "lng" : 13.459799999999973
     }
 }, {
     "name" : "Sparkasse",
@@ -193,8 +197,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.508517,
-        "ob" : 13.451262000000042
+        "lat" : 52.508517,
+        "lng" : 13.451262000000042
     }
 }, {
     "name" : "Immobilien Scout GmbH",
@@ -209,8 +213,8 @@ var arr = [{
         "zoom" : 0
     },
     "svPosition" : {
-        "nb" : 52.512563,
-        "ob" : 13.431039000000055
+        "lat" : 52.512563,
+        "lng" : 13.431039000000055
     }
 }, {
     "name" : "Geldautomat",
@@ -246,8 +250,8 @@ var arr = [{
         "zoom" : 2
     },
     "svPosition" : {
-        "nb" : 52.514422,
-        "ob" : 13.46718199999998
+        "lat" : 52.514422,
+        "lng" : 13.46718199999998
     }
 }, {
     "name" : "Bezirksamt Friedrichshain - Kreuzberg",
@@ -262,8 +266,8 @@ var arr = [{
         "zoom" : 2
     },
     "svPosition" : {
-        "nb" : 52.515103,
-        "ob" : 13.461612999999943
+        "lat" : 52.515103,
+        "lng" : 13.461612999999943
     }
 }, {
     "name" : "Nil - Sudanesischer Imbiss",
@@ -278,8 +282,8 @@ var arr = [{
         "zoom" : 2
     },
     "svPosition" : {
-        "nb" : 52.511976,
-        "ob" : 13.455465000000004
+        "lat" : 52.511976,
+        "lng" : 13.455465000000004
     }
 }, {
     "name" : "Kaufland",
@@ -334,8 +338,8 @@ var arr = [{
         "zoom" : 1
     },
     "svPosition" : {
-        "nb" : 52.513819,
-        "ob" : 13.474381999999991
+        "lat" : 52.513819,
+        "lng" : 13.474381999999991
     }
 }, {
     "name" : "Apotheke am Ostkreuz",
@@ -350,8 +354,8 @@ var arr = [{
         "zoom" : 2
     },
     "svPosition" : {
-        "nb" : 52.506119,
-        "ob" : 13.465824999999995
+        "lat" : 52.506119,
+        "lng" : 13.465824999999995
     }
 }, {
     "name" : "Schulze´s Farben- und Tapetenhaus",
@@ -383,5 +387,14 @@ var arr = [{
     "description" : "Tel.: +49302910763<br/>Öffnungszeiten:<br/>Montag 8.00-13.00 Uhr<br/>Dienstag 12.00-18.00 Uhr<br/>Mittwoch 12.00-18.00 Uhr<br/>Donnerstag 8.00-13.00 Uhr<br/>Freitag 8.00-13.00 Uhr",
     "lat" : 52.507003469739374,
     "lng" : 13.467774635581918,
-    "icon" : "img/map/roteskreuz.jpg"
+    "icon" : "img/map/roteskreuz.jpg",
+    "pov" : {
+        "heading" : -188.7,
+        "pitch" : -1.4999999999999991,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "lat" : 52.507105,
+        "lng" : 13.467804999999998
+    }
 }];

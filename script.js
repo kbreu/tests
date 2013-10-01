@@ -42,7 +42,7 @@ function initialize() {
     google.maps.event.addListener(infowindow, 'domready', function() {
         if (pano != null) {
             pano.myContext.data.pov = pano.getPov();
-            pano.myContext.data.svPosition = pano.getPosition();
+            pano.myContext.data.svPosition = { lat : pano.getPosition().lat(), lng : pano.getPosition().lng()};
             pano.unbind("position");
             pano.setVisible(false);
         }
@@ -51,7 +51,7 @@ function initialize() {
             linksControl : false,
             panControl : false,
             scrollwheel : false,
-            position: infowindow.myContext.data.svPosition? new google.maps.LatLng(infowindow.myContext.data.svPosition.nb, infowindow.myContext.data.svPosition.ob) : infowindow.myContext.marker.getPosition()
+            position: infowindow.myContext.data.svPosition? new google.maps.LatLng(infowindow.myContext.data.svPosition.lat, infowindow.myContext.data.svPosition.lng) : infowindow.myContext.marker.getPosition()
         };
         if (infowindow.myContext.data.pov) {
             params.pov = infowindow.myContext.data.pov;
@@ -63,7 +63,7 @@ function initialize() {
 
     google.maps.event.addListener(infowindow, 'closeclick', function() {
         infowindow.myContext.data.pov = pano.getPov();
-        infowindow.myContext.data.svPosition = pano.getPosition();
+        infowindow.myContext.data.svPosition = { lat : pano.getPosition().lat(), lng : pano.getPosition().lng()};
         pano.unbind("position");
         pano.setVisible(false);
         pano = null;
