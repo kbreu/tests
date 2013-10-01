@@ -41,22 +41,29 @@ function initialize() {
     pano = null;
     google.maps.event.addListener(infowindow, 'domready', function() {
         if (pano != null) {
+            pano.myContext.data.pov = pano.getPov();
+            pano.myContext.data.svPosition = pano.getPosition();
             pano.unbind("position");
             pano.setVisible(false);
         }
-        pano = new google.maps.StreetViewPanorama(document.getElementById("content"), {
-            clickToGo : false,
+        var params = {
             addressControl : false,
             linksControl : false,
             panControl : false,
             scrollwheel : false,
-            zoomControl : false
-        });
-        pano.bindTo("position", infowindow.marker);
+            position: infowindow.myContext.data.svPosition? new google.maps.LatLng(infowindow.myContext.data.svPosition.nb, infowindow.myContext.data.svPosition.ob) : infowindow.myContext.marker.getPosition()
+        };
+        if (infowindow.myContext.data.pov) {
+            params.pov = infowindow.myContext.data.pov;
+        }
+        pano = new google.maps.StreetViewPanorama(document.getElementById("content"), params);
+        pano.myContext = infowindow.myContext;
         pano.setVisible(true);
     });
 
     google.maps.event.addListener(infowindow, 'closeclick', function() {
+        infowindow.myContext.data.pov = pano.getPov();
+        infowindow.myContext.data.svPosition = pano.getPosition();
         pano.unbind("position");
         pano.setVisible(false);
         pano = null;
@@ -77,16 +84,18 @@ function initialize() {
                     flat : true
                 });
                 
-
-                markers.push({
+                var context = {
                     marker : marker,
                     data : entry
-                });
+                };
+
+                markers.push(context);
                 markerArray.push(marker);
                 
                 google.maps.event.addListener(marker, 'click', function() {
                     $('#details').html(contentString);
-                    infowindow.marker = marker;
+                    infowindow.myContext = context;
+                    infowindow.data = entry;
                     infowindow.setContent(contentString+svString);
                     infowindow.open(map,marker);
                 });
@@ -98,6 +107,8 @@ function initialize() {
                     'address' : entry.address
                 }, function(results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {
+                        var contentString = "<strong>" + entry.name + "</strong><br/>" + entry.address + "<br/>" + entry.description;
+                        var svString = "<div id='content' style='height: 150px; width: 300px;'></div>";
                         var marker = new google.maps.Marker({
                             position : results[0].geometry.location,
                             icon : entry.icon,
@@ -108,13 +119,19 @@ function initialize() {
                         });
                         entry.lat = results[0].geometry.location.lat();
                         entry.lng = results[0].geometry.location.lng();
-                        markers.push({
+                        
+                        var context = {
                             marker : marker,
                             data : entry
-                        });
+                        };
+                        markers.push(context);
                         markerArray.push(marker);
                         google.maps.event.addListener(marker, 'click', function() {
-                            $('#details').html(entry.name + "<br/>" + entry.address + "<br/>" + entry.description);
+                            $('#details').html(contentString);
+                            infowindow.myContext = context;
+                            infowindow.data = entry;
+                            infowindow.setContent(contentString+svString);
+                            infowindow.open(map,marker);
                         });
                     } else {
                         alert("Geocode was not successful for the following reason: " + status);

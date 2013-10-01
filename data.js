@@ -4,21 +4,44 @@ var arr = [{
     "description" : "Öffnungszeiten<br/>Mo-Fr 6:00-18:00 Uhr<br/>Tel. +49302910614<br/>Email <a href='mailto:kita-simplonstrasse@bik-ev.de'>kita-simplonstrasse@bik-ev.de</a>",
     "lat" : 52.50819661144704,
     "lng" : 13.458948233868341,
-    "icon" : "img/map/kita.jpg"
+    "icon" : "img/map/kita.jpg",
+    "pov" : {
+        "heading" : -127.19999999999999,
+        "pitch" : -2.1000000000000005,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.508283,
+        "ob" : 13.459127999999964
+    }
 }, {
     "name" : "Briefkasten",
     "address" : "Wühlischstr. 24, 10245 Berlin",
     "description" : "Leerungszeiten<br/>Mo-Fr 15:15 17:15 21:30</br>Sa 12:15<br/>So 09:00 21:30",
     "lat" : 52.50912743213321,
     "lng" : 13.459627375463242,
-    "icon" : "img/map/lettericon.gif"
+    "icon" : "img/map/lettericon.gif",
+    "pov" : {
+        "heading" : 32.699999999999996,
+        "pitch" : -4.500000000000001,
+        "zoom" : 1
+    }
 }, {
     "name" : "Briefkasten",
     "address" : "Sonntagstr. 1, 10245 Berlin",
     "description" : "Leerungszeiten<br/>Mo-Fr 13:00 17:15 21:30<br/>Sa 12:15<br/>So 09:00 21:30",
     "lat" : 52.504513271260144,
     "lng" : 13.467909835581963,
-    "icon" : "img/map/lettericon.gif"
+    "icon" : "img/map/lettericon.gif",
+    "pov" : {
+        "heading" : 47.100000000000016,
+        "pitch" : -17.999999999999996,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.504474,
+        "ob" : 13.467862999999966
+    }
 }, {
     "name" : "Packstation 114",
     "address" : "Revaler Str. 2, 10243 Berlin",
@@ -32,49 +55,96 @@ var arr = [{
     "description" : "Öffnungszeiten<br/>Mo-Fr 09:00-18:30 Uhr<br/>Sa 09:30-13:00 Uhr",
     "lat" : 52.51453430000001,
     "lng" : 13.468448399999943,
-    "icon" : "img/map/post.png"
+    "icon" : "img/map/post.png",
+    "pov" : {
+        "heading" : -33.675000000000004,
+        "pitch" : -1.5749999999999995,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "nb" : 52.514416,
+        "ob" : 13.468499000000065
+    }
 }, {
     "name" : "Rewe",
     "address" : "Revaler Straße 33, 10245 Berlin",
     "description" : "+493029368761<br/>Geöffnet Mo-Sa 7:00-22:00 Uhr",
-    "lat" : 52.505776943592544,
-    "lng" : 13.459300498008702,
-    "icon" : "img/map/rewe.png"
+    "lat" : 52.505946734791074,
+    "lng" : 13.45957944774625,
+    "icon" : "img/map/rewe.png",
+    "pov" : {
+        "heading" : -149.23125,
+        "pitch" : -0.6937500000000001,
+        "zoom" : 3
+    },
+    "svPosition" : {
+        "nb" : 52.506221,
+        "ob" : 13.459754999999973
+    }
 }, {
     "name" : "Lidl",
     "address" : "Boxhagener Str. 76-78, 10245 Berlin",
     "description" : "Geöffnet Mo-Sa 8:00-22:00 Uhr",
-    "lat" : 52.50762563527553,
-    "lng" : 13.469050310554849,
-    "icon" : "img/map/lidl.bmp"
+    "lat" : 52.50744279017268,
+    "lng" : 13.468428038063394,
+    "icon" : "img/map/lidl.bmp",
+    "pov" : {
+        "heading" : 31.200000000000006,
+        "pitch" : -2.4000000000000004,
+        "zoom" : 1
+    }
 }, {
     "name" : "Aldi",
     "address" : "Revaler Straße 33, 10245 Berlin‎",
     "description" : "Geöffnet Mo-Sa 08:00-20:00 Uhr (???)",
     "lat" : 52.5058422479773,
     "lng" : 13.460196355819676,
-    "icon" : "img/map/aldi.bmp"
+    "icon" : "img/map/aldi.bmp",
+    "pov" : {
+        "heading" : -185.70000000000002,
+        "pitch" : -3.0000000000000004,
+        "zoom" : 1
+    }
 }, {
     "name" : "Briefkasten",
     "address" : "Krossener Str. 1, 10245 Berlin",
     "description" : "Leerungszeiten<br/>Mo-Fr 13:00 15:15 17:15 21:30<br/>Sa 12:15<br/>So 09:00 21:30",
     "lat" : 52.509717540202594,
     "lng" : 13.46397272948684,
-    "icon" : "img/map/lettericon.gif"
+    "icon" : "img/map/lettericon.gif",
+    "pov" : {
+        "heading" : 16.5,
+        "pitch" : -22.200000000000003,
+        "zoom" : 1
+    }
 }, {
     "name" : "Zu Hause",
     "address" : "Simplonstraße 46, 10245 Berlin",
     "description" : "",
     "lat" : 52.50592979796682,
     "lng" : 13.463195780426076,
-    "icon" : "img/map/zuhause.jpg"
+    "icon" : "img/map/zuhause.jpg",
+    "pov" : {
+        "heading" : -133.8,
+        "pitch" : 2.6999999999999997,
+        "zoom" : 1
+    }
 }, {
     "name" : "Deutsche Bank",
     "address" : "Möllendorffstraße 117, 10367 Berlin",
     "description" : "Öffnungszeiten<br/>Montag: 10:00-18:00 Uhr<br/> Dienstag: 10:00-18:00 Uhr<br/>Mittwoch: 10:00-16:00 Uhr<br/>Donnerstag: 10:00-18:00 Uhr<br/>Freitag: 10:00-16:00 Uhr",
-    "lat" : 52.51486,
-    "lng" : 13.477730000000065,
-    "icon" : "img/map/deutschebank.jpg"
+    "lat" : 52.51403732648312,
+    "lng" : 13.477129185180729,
+    "icon" : "img/map/deutschebank.jpg",
+    "pov" : {
+        "heading" : -30.6,
+        "pitch" : 3.4500000000000006,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.513937,
+        "ob" : 13.477359999999976
+    }
 }, {
     "name" : "Rewe",
     "address" : "Am Ostbahnhof 9, 10243 Berlin",
@@ -88,28 +158,60 @@ var arr = [{
     "description" : "Filialöffnungszeiten<br/>Montag 09:00-13:00 Uhr 14:00-16:00 Uhr<br/>Dienstag 09:00-13:00 Uhr 14:30-18:00 Uhr<br/>Mittwoch 09:00-13:00 Uhr 14:00-16:00 Uhr<br/>Donnerstag 09:00-13:00 Uhr 14:30-18:00 Uhr<br/>Freitag 09:00-14:00 Uhr",
     "lat" : 52.5150065,
     "lng" : 13.459470799999963,
-    "icon" : "img/map/commerzbank.jpg"
+    "icon" : "img/map/commerzbank.jpg",
+    "pov" : {
+        "heading" : -139.20000000000002,
+        "pitch" : 5.700000000000001,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.515148,
+        "ob" : 13.459799999999973
+    }
 }, {
     "name" : "Sparkasse",
     "address" : "Boxhagener Str. 55, 10245 Berlin",
     "description" : "<strong>Öffnungszeiten</strong><br/>Mo, Mi, Fr 9.30-15.00 Uhr<br/>Di, Do 9.30-18.00 Uhr",
     "lat" : 52.507282868150575,
     "lng" : 13.467766646661744,
-    "icon" : "img/map/sparkasse.ico"
+    "icon" : "img/map/sparkasse.ico",
+    "pov" : {
+        "heading" : -118.8,
+        "pitch" : -6.599999999999999,
+        "zoom" : 1
+    }
 }, {
     "name" : "Sparkasse",
     "address" : "Warschauer Str. 55, 10243 Berlin",
     "description" : "<strong>Öffnungszeiten</strong><br/>Mo, Mi, Fr 9.30-15.00 Uhr<br/>Di, Do 9.30-18.00 Uhr",
     "lat" : 52.50860875424247,
     "lng" : 13.45127441638465,
-    "icon" : "img/map/sparkasse.ico"
+    "icon" : "img/map/sparkasse.ico",
+    "pov" : {
+        "heading" : 11.7,
+        "pitch" : 6.600000000000002,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.508517,
+        "ob" : 13.451262000000042
+    }
 }, {
     "name" : "Immobilien Scout GmbH",
     "address" : "Andreasstr. 10, 10243 Berlin",
     "description" : "",
     "lat" : 52.512594,
     "lng" : 13.431107999999995,
-    "icon" : "img/map/immobilienscout.jpg"
+    "icon" : "img/map/immobilienscout.jpg",
+    "pov" : {
+        "heading" : 100.50000000000001,
+        "pitch" : 11.100000000000001,
+        "zoom" : 0
+    },
+    "svPosition" : {
+        "nb" : 52.512563,
+        "ob" : 13.431039000000055
+    }
 }, {
     "name" : "Geldautomat",
     "address" : "Boxhagener Str. 55, Berlin, 10245",
@@ -137,21 +239,48 @@ var arr = [{
     "description" : "",
     "icon" : "img/map/visa.jpg",
     "lat" : 52.5142862,
-    "lng" : 13.467135299999995
+    "lng" : 13.467135299999995,
+    "pov" : {
+        "heading" : -194.55000000000004,
+        "pitch" : -1.9500000000000015,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "nb" : 52.514422,
+        "ob" : 13.46718199999998
+    }
 }, {
     "name" : "Bezirksamt Friedrichshain - Kreuzberg",
     "address" : "Frankfurter Allee 35 / 37, 10247 Berlin",
     "description" : "Öffnungszeiten<br/>Montag 08:00-15.00 Uhr<br/>Dienstag 09:00-18:00 Uhr<br/>Mittwoch 08:00-13:00 Uhr (nur mit Termin)<br/>Donnerstag 09:00-18:00 Uhr (nur mit Termin)<br/>Freitag 08:00-13:00 Uhr<br/>Samstag Jeden 2. und 4. Samstag im Monat: 09:00 - 13:00 Uhr (nur mit Termin)",
     "icon" : "img/map/berlin.ico",
     "lat" : 52.51529,
-    "lng" : 13.461620000000039
+    "lng" : 13.461620000000039,
+    "pov" : {
+        "heading" : 5.699999999999999,
+        "pitch" : 13.649999999999999,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "nb" : 52.515103,
+        "ob" : 13.461612999999943
+    }
 }, {
     "name" : "Nil - Sudanesischer Imbiss",
     "address" : "Grünberger Str. 52, 10245 Berlin",
     "description" : "Telefon : +493029047713<br/>Email : info@nil-imbiss.de<br/>Öffnungszeiten: Mo-So 11:00-24:00 Uhr",
     "icon" : "img/map/nil.gif",
     "lat" : 52.5118678,
-    "lng" : 13.455497599999944
+    "lng" : 13.455497599999944,
+    "pov" : {
+        "heading" : 168.75000000000003,
+        "pitch" : -5.024999999999999,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "nb" : 52.511976,
+        "ob" : 13.455465000000004
+    }
 }, {
     "name" : "Kaufland",
     "address" : "Hermann-Blankenstein-Straße 38, Berlin",
@@ -165,7 +294,12 @@ var arr = [{
     "description" : "Öffnungszeiten<br/>Mo–Sa 09:00–21:00",
     "icon" : "img/map/rossmann.png",
     "lat" : 52.51219469999999,
-    "lng" : 13.452899000000002
+    "lng" : 13.452899000000002,
+    "pov" : {
+        "heading" : 65.7,
+        "pitch" : -2.1000000000000005,
+        "zoom" : 1
+    }
 }, {
     "name" : "Rossmann",
     "address" : "Am Ostbahnhof 9, 10243 Berlin",
@@ -193,14 +327,32 @@ var arr = [{
     "description" : "Öffnungszeiten<br/>Mo-Sa 09:30-21:00 Uhr",
     "icon" : "img/map/dm.jpg",
     "lat" : 52.5141263,
-    "lng" : 13.474508900000046
+    "lng" : 13.474508900000046,
+    "pov" : {
+        "heading" : -12.900000000000006,
+        "pitch" : 3.899999999999997,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "nb" : 52.513819,
+        "ob" : 13.474381999999991
+    }
 }, {
     "name" : "Apotheke am Ostkreuz",
     "address" : "Sonntagstraße 12, 10245 Berlin",
     "description" : "+49302916212",
     "icon" : "img/map/apotheke.png",
     "lat" : 52.50623,
-    "lng" : 13.465940000000046
+    "lng" : 13.465940000000046,
+    "pov" : {
+        "heading" : 28.5,
+        "pitch" : -4.5,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "nb" : 52.506119,
+        "ob" : 13.465824999999995
+    }
 }, {
     "name" : "Schulze´s Farben- und Tapetenhaus",
     "address" : "Provinzstrasse 57, 13409 Berlin",
