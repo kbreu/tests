@@ -4,6 +4,7 @@ var geocoder;
 
 google.maps.visualRefresh = true;
 
+
 function saveMarkerPositions() {
     for (var i = 0; i < markers.length; i++) {
         markers[i].data.lat = markers[i].marker.getPosition().lat();
@@ -14,6 +15,8 @@ function saveMarkerPositions() {
 }
 
 function initialize() {
+    $('body').css('backgroundColor', '#dddddd');
+    
     geocoder = new google.maps.Geocoder();
 
     var mapOptions = {
