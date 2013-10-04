@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>My Friedrichshain</name>
+    <name>MyXHain</name>
     <icon src="icon.png" />
     <icon src="img/icons/android/ldpi-36.png" gap:platform="android" gap:density="ldpi" />
     <icon src="img/icons/android/mdpi-48.png" gap:platform="android" gap:density="mdpi" />
