@@ -218,18 +218,52 @@ var arr = [{
     }
 }, {
     "name" : "Geldautomat",
-    "address" : "Boxhagener Str. 55, Berlin, 10245",
+    "address" : "Boxhagener Straße 78, Berlin, 10245",
     "description" : "",
     "icon" : "img/map/visa.jpg",
-    "lat" : 52.50731307040578,
-    "lng" : 13.467792127647385
+    "lat" : 52.50742370770352,
+    "lng" : 13.46811043914795,
+    "pov" : {
+        "heading" : 17.4,
+        "pitch" : -3.000000000000001,
+        "zoom" : 1
+    },
+    "svPosition" : {
+        "lat" : 52.50731,
+        "lng" : 13.468022000000019
+    }
 }, {
     "name" : "Geldautomat",
-    "address" : "Simplonstr. 10/12, Berlin, 10245",
+    "address" : "Boxhagener Straße 61, Berlin, 10245",
     "description" : "",
     "icon" : "img/map/visa.jpg",
-    "lat" : 52.5090823,
-    "lng" : 13.45748679999997
+    "lat" : 52.506154486319886,
+    "lng" : 13.469957084655789,
+    "pov" : {
+        "heading" : -178.20000000000016,
+        "pitch" : -4.279998779296889,
+        "zoom" : 3
+    },
+    "svPosition" : {
+        "lat" : 52.506316,
+        "lng" : 13.470012999999994
+    }
+}, {
+    "name" : "Geldautomat",
+    "address" : "Simon-Dach-Straße 13, Berlin, 10245",
+    "description" : "",
+    "icon" : "img/map/visa.jpg",
+    "lat" : 52.510442,
+    "lng" : 13.456160400000044,
+    "pov" : {
+        "heading" : -73.87500000000003,
+        "pitch" : -4.389999389648434,
+        "zoom" : 2
+    },
+    "svPosition" : {
+        "lat" : 52.510392,
+        "lng" : 13.456431000000066
+    }
 }, {
     "name" : "Geldautomat",
     "address" : "Revaler Str. 2, Berlin, 10243",
