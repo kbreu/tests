@@ -7,4 +7,9 @@
     <icon src="img/icons/android/hdpi-72.png" gap:platform="android" gap:density="hdpi" />
     <icon src="img/icons/android/xhdpi-96.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="splash.png" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="img/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="img/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="img/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="img/screen/android/screen-xhdpi-portrait.png" />
+    
 </widget>
